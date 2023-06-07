@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-item {
+            height: 600px;
+        }
+
+        .carousel-caption {
+            bottom: 10%;
+        }
+
+        /*
+        .carousel-item2 {
+            height: 700px;
+        }
+        .carousel-caption2 {
+            bottom: 10%;
+        }
+        */
+        .sice {
+            height: 500px;
+        }
+        
+        .size2{
+            height:100px;
+            width:100px;
+        }
+
+        .title_bottom {
+            bottom: 30%;
+        }
+    </style>
+
+
+    <title>Mi página web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+        }
+
+        /* Estilo del navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background-color: black;
+            color: #fff;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+            .navbar a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 20px;
+            }
+
+                .navbar a:hover {
+                    text-decoration: underline;
+                }
+
+        /* Estilo del body con efecto de parallax */
+        .parallax {
+            background-image: url("https://www.gob.mx/cms/uploads/article/main_image/82862/VINEDO_COAH_PARRAS_CASA-MADERO_AM-web.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            /*background: url('https://video.wixstatic.com/video/8e6a57_96b57869405440a29fb326c2d794a9b2/720p/mp4/file.mp4');
+
+
+            background-image: url('')
+            min-height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+                */
+        }
+
+            .parallax h1 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+                font-size: 5em;
+                text-shadow: 1px 1px #000;
+            }
+
+        .p {
+            text-align: justify;
+            margin: 0 20px;
+            color: aliceblue;
+        }
+        h2 {
+            margin: 0 20px;
+            color: aqua;
+        }
+        .thh2{
+            color: antiquewhite;
+            font-size: 2em;
+
+        }
+        /* Estilo del footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+            .footer p {
+                margin: 10px 0;
+            }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h5 style=" color: aqua; " >Empresa de produccion audio visual usando drones</h5>
+        <!--<h2><img class="size2" src="https://www.canva.com/design/DAFgcM57UEY/dgwkQbWmySw7PB_AmTVY3g/view" /></h2>
+            -->
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Body con efecto de parallax -->
+    <div class="parallax">
+        <h1>Drone Scanning</h1>
+    </div>
+
+
+
+    <br />
+    <br />
+    <br />
+
+
+
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <h2>Mayor eficiencia </h2>
+        <br />
+        <p class="p"> Los drones pueden realizar tareas en menos tiempo y con mayor eficiencia que los métodos tradicionales, 
+        lo que puede aumentar la productividad y reducir costos </p>
+    </div>
+    <br />
+
+    <div class="main-content">
+        <h2>Precisión</h2>
+        <br />
+        <p class="p">Los drones pueden recopilar datos y generar mapas y modelos 3D precisos, 
+        lo que los hace útiles para la agricultura de precisión, la cartografía y la topología </p>
+    </div>
+    <br />
+    <div class="main-content">
+        <h2>Seguridad </h2>
+        <br />
+        <p class="p">Los drones puede ser utilizados para realizar tareas peligrosas o de alto riego como la inspección de torres de energía o la monitorización de áreas en desastres naturales, lo que reduce el riesgo para los trabajadores </p>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <!--Mi primer carrusel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div style="text-align: center;">
+                    <img class="sice" src="https://github.com/Cristian-M0ntes/Imagenes/blob/main/Captura%20de%20pantalla%202023-04-20%20130321.png?raw=true" alt="Los Angeles">
+                    <div class="title_bottom">
+                        <h3>Los Angeles</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div style="text-align: center;">
+                    <img class="sice" src="https://github.com/Cristian-M0ntes/Imagenes/blob/main/SegmentoClientes.png?raw=true" alt="Chicago">
+                    <div class="title_bottom">
+                        <h3>Los Angeles</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div style="text-align: center;">
+                    <img class="sice " src="https://scontent.ftrc1-1.fna.fbcdn.net/v/t39.30808-6/341887062_952003565802489_7556299008950912713_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=mw4XKfzSGRAAX8mIaYT&_nc_ht=scontent.ftrc1-1.fna&oh=00_AfBfdqrunsZ7TN1pJw4XHBOzqm6olO-wkGw5FD5njz8CoA&oe=64478548" alt="New York">
+                    <div class=" title_bottom">
+                        <h3>Los Angeles</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!--FIN DEL PRIMER CARRUSEL-->
+
+
+    <br />
+    <br />
+    <br />
+
+
+    <!--TABLA -->
+    <table class="p" border="2" style="border-collapse: collapse; border-color: aqua;">
+        <thead>
+            <tr>
+                <th class="thh2" colspan="2" style="text-align:center;">SERVICIOS QUE OFRECEMOS</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td class="p" colspan="2">
+                    Nuestra empresa ofrecerá un servicio de fotografía,
+                    video, tomas de video e imagen aéreas, edición de contenido y creación de introducción en after effects.
+                </td>
+
+            </tr>
+           
+            <tr>
+                <td class="p" colspan="2">
+                    nuestra propuesta de valor se centra en ofrecer servicio personalizado, drones de alta calidad y 
+                    tecnología avanzada, seguridad y cumplimiento de regulaciones y una constante innovación en el mercado de drones.
+                </td>
+
+            </tr>
+
+            <tr>
+                <td class="p" colspan="2">
+                    La ventaja competitiva de nuestra empresa de alquiler de servicios de drones es la personalización del servicio. Nos aseguramos de entender
+                    las necesidades específicas de cada cliente y ofrecer soluciones personali-zadas para satisfacer esas necesidades. Esto 
+                    nos permite mantener una base de clientes leales y satisfechos, lo que a su vez aumenta la recomen-dación y la retención de clientes.
+                </td>
+
+            </tr>
+
+
+
+
+
+
+        </tbody>
+
+    </table>
+
+
+
+
+
+    <br />
+    <br />
+    <br />
+    <!--INICIO DEL PRIMER CARRUSEL-->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.ytimg.com/vi/Q3xcze3kHwo/maxresdefault.jpg" alt="Los Angeles">
+                <div class="carousel-caption">
+                    <h3>Los Angeles</h3>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img style="max-width: 90%; align-items: center;" src="https://scontent.ftrc1-1.fna.fbcdn.net/v/t39.30808-6/342176142_761221635416999_6006948289696063005_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=vIhYDh2FLPUAX-Vluty&_nc_ht=scontent.ftrc1-1.fna&oh=00_AfA6r26szui8ZNDJN96yusS05yEHZHmKfuKagJ2nYIYS7w&oe=6446172E" alt="Chicago">
+                <div class="carousel-caption">
+                    <h3>Universidad Tecnologica de Parras</h3>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img style="max-width: 90%; align-items: center;" src="https://github.com/Cristian-M0ntes/Imagenes/blob/main/19E7BCA4-4A9C-4682-9DBA-F87074C3D3D1.jpeg?raw=true" alt="New York">
+                <div class="carousel-caption">
+                    <h3>Valle de Parras</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+            -->
+    </div>
+
+    <!--FIN DEL SEGUNDO CARRUSEL-->
+
+
+    <br />
+    <br />
+    <br />
+
+
+
+
+
+
+    <br />
+    <br />
+    <br />
+    <!-- Footer -->
+    <div class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+        <a href="https://www.facebook.com/profile.php?id=100091930333800&sk=about">Facebook</a>
+
+    </div>
+</body>
+</html>
