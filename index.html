@@ -1,68 +1,45 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<script src="https://www.googleoptimize.com/optimize.js?id=OPT-N64893X"></script>
- 
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W3ZV5NW1ZV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-W3ZV5NW1ZV');
-</script>
-
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="Css/StyleSheet1.css">-->
+    <script src="/Javascript/Script1.js"></script>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3ZV5NW1ZV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-W3ZV5NW1ZV');
+    </script>
+
+    <!--este sccript sirve para renombrar el titulo por Come Back-->
+    <script>
+        let docTitle = document.title;
+        window.addEventListener("blur", () => {
+            document.title = "Come Back ;(";
+        });
+        window.addEventListener("focus", () => {
+            document.title = docTitle;
+        })
+    </script>
 
     <!-- Bootstrap CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <style>
-        .carousel-item {
-            height: 600px;
-        }
-
-        .carousel-caption {
-            bottom: 10%;
-        }
-
-        /*
-        .carousel-item2 {
-            height: 700px;
-        }
-        .carousel-caption2 {
-            bottom: 10%;
-        }
-        */
-        .sice {
-            height: 500px;
-        }
-        
-        .size2{
-            height:100px;
-            width:100px;
-        }
-
-        .title_bottom {
-            bottom: 30%;
-        }
-    </style>
 
 
-    <title>Mi página web</title>
+
     <style>
         * {
             margin: 0;
@@ -142,11 +119,13 @@
             margin: 0 20px;
             color: antiquewhite;
         }
+
         h2 {
             margin: 0 20px;
             color: antiquewhite;
         }
-        .thh2{
+
+        .thh2 {
             color: antiquewhite;
             font-size: 2em;
         }
@@ -161,208 +140,438 @@
             .footer p {
                 margin: 10px 0;
             }
+
+        .section {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            width: auto;
+        }
+
+
+        /* Definir la animación */
+        @keyframes mover {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        /* Aplicar la animación al elemento <h5> */
+        #h5 {
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 50%;
+                width: 20%
+            }
+
+            to {
+                margin-left: 0%;
+                width: 40%;
+            }
+        }
+
+        #explora {
+            animation-duration: 5s;
+            animation-name: slidein2;
+        }
+
+        @keyframes slidein2 {
+            from {
+                margin-left: 0%;
+                width: 40%;
+            }
+
+            to {
+                margin-left: 10%;
+                width: 20%
+            }
+        }
+
+
+        #color1, #color2, #color3 {
+            animation-duration: 20s;
+            animation-name: slidecolor;
+            border-color: aqua;
+        }
+
+        @keyframes slidecolor {
+            from {
+                border-color: purple;
+            }
+
+            to {
+                border-color: aqua;
+            }
+        }
     </style>
+
 
 
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCJK25L"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    
-    <!-- Navbar -->
-    <div class="navbar">
-        <h5 style=" color: aqua; ">Empresa de produccion audio visual usando drones</h5>
-        <!--<h2><img class="size2" src="https://www.canva.com/design/DAFgcM57UEY/dgwkQbWmySw7PB_AmTVY3g/view" /></h2>
-        -->
-        <div>
-            <a href="index.html">Inicio</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="contacto.html">Contacto</a>
-        </div>
-    </div>
-
-    <!-- Body con efecto de parallax -->
-    <div class="parallax">
-        <h1>Drone Scanning</h1>
-    </div>
-
-
-
-    <br />
-    <br />
-    <br />
-
-
-
-
-    <!-- Contenido principal -->
-    <div class="main-content">
-        <h2>Explora el mundo desde nuevas alturas con nuestros videos y fotos aéreas.</h2>
-        <br />
-        <p class="p">Nuestra empresa se dedica a la captura de imágenes y videos aéreos mediante el uso de drones de última generación, que nos permiten ofrecer una perspectiva única y fascinante del mundo que nos rodea. Nos especializamos en la post producción de estos materiales, lo que nos permite entregar productos finales de alta calidad y con un alto valor agregado para nuestros clientes. Con nuestro equipo de expertos en edición de video e imagen, transformamos la captura cruda de drones en productos finales que cautivan a nuestros clientes y les permiten experimentar el mundo desde una perspectiva nunca antes vista. Ya sea para uso comercial o personal, nuestro enfoque personalizado y compromiso con la calidad hacen de nosotros la elección perfecta para aquellos que buscan productos únicos y emocionantes. ¡Contáctanos hoy para comenzar a explorar el mundo desde nuevas alturas!</p>
-    </div>
-
-    <br />
-    <br />
-    <br />
-
-    <!--Mi primer carrusel -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ul>
-
-        <!-- Slides -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div style="text-align: center;">
-                    <img class="sice" src="https://github.com/Cristian-M0ntes/Imagenes/blob/main/RelacionesClientes.png?raw=true" alt="Los Angeles">
-                    <div class="title_bottom">
-                        <!--
-                             <h3>Los Angeles</h3>
-                             <p>LA is always so much fun!</p>
-                        --->
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div style="text-align: center;">
-                    <img class="sice" src="https://github.com/Cristian-M0ntes/Imagenes/blob/main/SegmentoClientes.png?raw=true" alt="Chicago">
-                    <div class="title_bottom">
-
-                        <!--
-                             <h3>Chicago</h3>
-                             <p>Thank you, Chicago!</p>
-                        -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div style="text-align: center;">
-                    <img class="sice " src="https://github.com/Cristian-M0ntes/Imagenes/blob/main/Captura%20de%20pantalla%202023-04-20%20130321.png?raw=true" alt="New York">
-
-                    <!--
-                    <div class=" title_bottom">
-                        <h3>New York</h3>
-                        <p>We love the Big Apple!</p>
-                    </div>
-
-                    -->
-                </div>
-            </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-    </div>
-    <!--FIN DEL PRIMER CARRUSEL-->
-
-
-    <!--TABLA -->
-    <table class="p" border="1" style="border-collapse: collapse; border-color: gray;">
-        <thead>
-            <tr>
-                <th class="thh2" colspan="2" style="text-align:center;">Venta de videos e imágenes, post producción con drones</th>
-            </tr>
-        </thead>
-
-     
-        <tbody >
-            <tr>
-                <td class="p" colspan="2">Nuestra empresa se dedica a capturar videos e imágenes con drones de alta tecnología, y a su posterior edición y producción. Nos especializamos en brindar soluciones personalizadas para nuestros clientes en diversos campos, desde publicidad y marketing hasta inspecciones y monitoreo de terrenos. Contáctenos para obtener más información.</td>
-            </tr>
-        </tbody>
-       
-    </table>
-
-
-
-
-
-
-
-
-    <br />
-    <br />
-    <br />
-    <!--INICIO DEL PRIMER CARRUSEL-->
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ul>
-
-        <!-- Slides -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://i.ytimg.com/vi/Q3xcze3kHwo/maxresdefault.jpg" alt="Los Angeles">
-                <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <!-- <p>LA is always so much fun!</p>-->
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <img src="https://i.ytimg.com/vi/Q3xcze3kHwo/maxresdefault.jpg" alt="Chicago">
-                <div class="carousel-caption">
-                    <h3>Chicago</h3>
-                    <p>Thank you, Chicago!</p>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <img src="https://i.ytimg.com/vi/Q3xcze3kHwo/maxresdefault.jpg" alt="New York">
-                <div class="carousel-caption">
-                    <h3>New York</h3>
-                    <p>We love the Big Apple!</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Left and right controls
-        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
+    <main>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCJK25L"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <!-- Navbar -->
+        <div class="navbar">
+            <h5 id="h5" style=" color: aqua; ">Empresa de produccion audio visual usando drones</h5>
+            <!--<h2><img class="size2" src="https://www.canva.com/design/DAFgcM57UEY/dgwkQbWmySw7PB_AmTVY3g/view" /></h2>
             -->
-    </div>
+            <div>
+                <a href="index.html">Inicio</a>
+                <a href="#Servicios1">Servicios</a>
+                <a href="#p3">Contacto</a>
 
-    <!--FIN DEL SEGUNDO CARRUSEL-->
+            </div>
+        </div>
 
+        <!-- Body con efecto de parallax -->
+        <div class="parallax">
+            <h1>Drone Scanning</h1>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <table>
+                <tr>
+                    <td id="explora">
+                        <h2>Explora el mundo desde nuevas alturas con nuestros videos y fotos aéreas.</h2>
+                    </td>
+                    <td>
+                        <p class="p">Nuestra empresa se dedica a la captura de imágenes y videos aéreos mediante el uso de drones de última generación, que nos permiten ofrecer una perspectiva única y fascinante del mundo que nos rodea. Nos especializamos en la post producción de estos materiales, lo que nos permite entregar productos finales de alta calidad y con un alto valor agregado para nuestros clientes. Con nuestro equipo de expertos en edición de video e imagen, transformamos la captura cruda de drones en productos finales que cautivan a nuestros clientes y les permiten experimentar el mundo desde una perspectiva nunca antes vista. Ya sea para uso comercial o personal, nuestro enfoque personalizado y compromiso con la calidad hacen de nosotros la elección perfecta para aquellos que buscan productos únicos y emocionantes. ¡Contáctanos hoy para comenzar a explorar el mundo desde nuevas alturas!</p>
+                    </td>
+                </tr>
+            </table>
+            <br />
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+        <!--Mi primer carrusel -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ul>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div style="text-align: center;">
+                        <img class="sice" src="https://github.com/Cristian-M0ntes/Imagenes/blob/main/Captura%20de%20pantalla%202023-04-20%20130321.png?raw=true" alt="">
+                        <div class="title_bottom">
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div style="text-align: center;">
+                        <img class="sice" src="https://github.com/Cristian-M0ntes/Imagenes/blob/main/SegmentoClientes.png?raw=true" alt="">
+                        <div class="title_bottom">
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div style="text-align: center;">
+                        <img class="sice " src="https://scontent.ftrc1-1.fna.fbcdn.net/v/t39.30808-6/341887062_952003565802489_7556299008950912713_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=mw4XKfzSGRAAX8mIaYT&_nc_ht=scontent.ftrc1-1.fna&oh=00_AfBfdqrunsZ7TN1pJw4XHBOzqm6olO-wkGw5FD5njz8CoA&oe=64478548" alt="">
+                        <div class=" title_bottom">
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <!--FIN DEL PRIMER CARRUSEL-->
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+        <section id="Servicios1"> </section>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <style>
+            #animationTitle {
+                color: aqua;
+                animation-name: example;
+                animation-duration: 50s;
+            }
+
+            @keyframes example {
+                from {
+                    color: black;
+                }
+
+                to {
+                    color: aqua;
+                }
+            }
+        </style>
+        <!--TABLA -->
+        <table class="p" border="2" style="border-collapse: collapse; border-color: aqua;">
+            <thead>
+                <tr>
+
+                    <th id="animationTitle" class="thh2" colspan="2" style="text-align:center; border-color: aqua;">SERVICIOS QUE OFRECEMOS</th>
+
+                </tr>
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+                    <td id="color1" class="p" colspan="2">
+                        Nuestra empresa ofrecerá un servicio de fotografía,
+                        video, tomas de video e imagen aéreas, edición de contenido y creación de introducción en after effects.
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td id="color2" class="p" colspan="2">
+                        nuestra propuesta de valor se centra en ofrecer servicio personalizado, drones de alta calidad y
+                        tecnología avanzada, seguridad y cumplimiento de regulaciones y una constante innovación en el mercado de drones.
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td id="color3" class="p" colspan="2">
+                        La ventaja competitiva de nuestra empresa de alquiler de servicios de drones es la personalización del servicio. Nos aseguramos de entender
+                        las necesidades específicas de cada cliente y ofrecer soluciones personali-zadas para satisfacer esas necesidades. Esto
+                        nos permite mantener una base de clientes leales y satisfechos, lo que a su vez aumenta la recomen-dación y la retención de clientes.
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+        <!-- ULTIMO CARRUSEL -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="text-align: center;">
+                    <img class="d-block w-100" /><img src="" alt="" />
+
+                </div>
+                <div class="carousel-item active" style="text-align: center;">
+                    <img class="d-block w-100" /><img src="" alt="" />
+
+                </div>
+                <div class="carousel-item active" style="text-align: center;">
+                    <img class="d-block w-100" /> <img src="https://i.ytimg.com/vi/Q3xcze3kHwo/maxresdefault.jpg" alt="" />
+
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+
+        </div>
+        <!-- FIN DEL ULTIMO CARRUSEL -->
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div>
+            <!-- Contenido principal -->
+            <div class="main-content">
+                <h2>Mayor eficiencia </h2>
+                <br />
+                <p class="p">
+                    Los drones pueden realizar tareas en menos tiempo y con mayor eficiencia que los métodos tradicionales,
+                    lo que puede aumentar la productividad y reducir costos
+                </p>
+            </div>
+            <br />
+
+            <div class="main-content">
+                <h2>Precisión</h2>
+                <br />
+                <p class="p">
+                    Los drones pueden recopilar datos y generar mapas y modelos 3D precisos,
+                    lo que los hace útiles para la agricultura de precisión, la cartografía y la topología
+                </p>
+            </div>
+            <br />
+            <div class="main-content">
+                <h2>Seguridad </h2>
+                <br />
+                <p class="p">Los drones puede ser utilizados para realizar tareas peligrosas o de alto riego como la inspección de torres de energía o la monitorización de áreas en desastres naturales, lo que reduce el riesgo para los trabajadores </p>
+            </div>
+
+        </div>
+
+
+
+        <style>
+            div.center {
+                text-align: center;
+            }
+        </style>
+        <div class="center">
+
+            <!-- PART OF THE VIDEO -->
+            <video id="videoCompu" width="1024" height="800" autoplay loop>
+                <source src="Audiovisuals/video.mp4" type="video/mp4">
+                <source src="Audiovisuals/brain.mp3" type="audio/mp3">
+                Your browser does not support HTML video.
+            </video>
+
+        </div>
+
+
+
+
+        <br />
+        <br />
+        <br />
+        <br id="p3" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+       
+        <section>
+              
+                       <!-- Contenido principal -->
+            <div class="main-content">
+                <h1 class="p3">Bienvenido ala pagina de contato</h1>
+                <br />
+                <h2>Facebook  </h2>
+                <br />
+                <p class="p">
+                    Si deseas contactar a través de Facebook, puedes enviar un mensaje directo a la página del perfil <a href="https://www.facebook.com/profile.php?id=100093273946700">de Facebook con el nombre de DroneScanning</a>
+                    Allí encontrarás información sobre los servicios y su actividad en la plataforma.
+                </p>
+            </div>
+            <br />
+
+            <div class="main-content">
+                <h2>Correo Electronico</h2>
+                <br />
+                <p class="p">
+                    Por último, si prefieres enviar un correo electrónico, la dirección de correo electrónico es <a href="">drone.your.mind@proton.me</a>
+                    Aquí puedes enviar cualquier pregunta o comentario que tengas, y la persona se pondrá en contacto contigo lo antes posible.
+                </p>
+            </div>
+            <br />
+            <div class="main-content">
+                <h2>Numero de Telefono Movil</h2>
+                <br />
+                <p class="p">
+                    Si prefieres comunicarte por teléfono, el número para contactar es <a href="#">8110177867</a>.
+                    Puedes enviar un mensaje de texto o llamar directamente para hablar con la persona.
+                </p>
+            </div>
+        </section>
+
+
+    </main>
 
     <br />
     <br />
     <br />
-
-
-
-
-
     <br />
     <br />
     <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
     <!-- Footer -->
     <div class="footer">
         <p>Derechos reservados &copy; 2023</p>
-        <a href="https://www.facebook.com/profile.php?id=100091930333800&sk=about">Facebook</a>
+        <a href="https://www.facebook.com/profile.php?id=100093273946700">Facebook</a>
 
     </div>
 </body>
